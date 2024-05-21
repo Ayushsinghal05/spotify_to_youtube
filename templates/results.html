@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Results</title>
+</head>
+<body>
+    <h1>Playlist Results</h1>
+    <ul>
+        {% for result in results %}
+            <li>{{ result.query }}: <a href="{{ result.youtube_url }}">Watch on YouTube</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
